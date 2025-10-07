@@ -1,13 +1,72 @@
-# MAIT X AWS
-# 🚀 AWS Academy × MAIT Front-End Website
+# AWS Academy × MAIT Partnership Website
 
-![AWS Logo](https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg) &nbsp; × &nbsp; ![MAIT Logo](https://www.mait.ac.in/images/logo.png)
+## Project Structure
 
----
+```
+MAIT-X-AWS/
+├── index.html          # Main HTML file
+├── README.md          # Project documentation
+├── assets/            # All project assets organized by type
+│   ├── css/           # Stylesheets
+│   │   └── style.css  # Main stylesheet
+│   ├── js/            # JavaScript files
+│   │   └── app.js     # Main JavaScript functionality
+│   └── images/        # All images used in the project
+│       ├── facebook-group.jpg     # Facebook social media image
+│       ├── facebook-post.jpg      # Facebook post placeholder
+│       ├── hero.jpg              # Hero section background image
+│       ├── instagram-group.jpg    # Instagram group image
+│       ├── instagram-post.jpg     # Instagram post placeholder
+│       ├── mait-campus.jpg       # MAIT campus image
+│       └── screenshot.png        # Instagram section screenshot
+```
 
-Welcome to the **official front-end website** project showcasing the exciting collaboration between the **AWS Academy** and **Maharaja Agrasen Institute of Technology (MAIT)**! This website highlights the partnership, academic excellence, cloud certification paths, and student engagement through a beautiful, modern design.
+## Features
 
----
+### Sections
+1. **Header/Navigation** - AWS × MAIT branding with responsive navigation
+2. **Hero Section** - Dynamic image loading with statistics
+3. **AWS Academy Section** - Program benefits and information
+4. **Highlights Section** - Statistics and social media integration
+5. **About MAIT Section** - Institution information and programs
+6. **Contact Section** - Contact information and Google Maps integration
+7. **Footer** - Links and branding
+
+### Key Functionality
+- Responsive design for all devices
+- Dynamic image loading with fallbacks
+- Social media integration (Facebook & Instagram)
+- Interactive statistics counters
+- Google Maps integration
+- AWS/MAIT consistent branding
+- Smooth animations and hover effects
+
+### Color Scheme
+- **AWS Navy**: #252F3E (Primary text and headers)
+- **AWS Orange**: #FF9900 (Accents and highlights)
+- **MAIT Primary**: #1E3A8A (Secondary branding)
+
+### Technologies Used
+- HTML5
+- CSS3 (Custom properties, Grid, Flexbox)
+- Vanilla JavaScript
+- Google Maps Embed API
+
+## Browser Compatibility
+- Modern browsers (Chrome, Firefox, Safari, Edge)
+- Responsive design for mobile, tablet, and desktop
+- Progressive enhancement with fallbacks
+
+## Assets Information
+All assets are organized in the `/assets` directory:
+- **CSS**: Minified and comment-free for production
+- **Images**: Optimized for web delivery
+- **JavaScript**: Clean, production-ready code
+
+## Deployment
+- Ready for static hosting (GitHub Pages, Netlify, Vercel)
+- All paths are relative for easy deployment
+- No external dependencies beyond embedded maps
 
 ## ✨ Features
 
@@ -42,6 +101,8 @@ Welcome to the **official front-end website** project showcasing the exciting co
 - **CSS3:** Grid & Flexbox for responsive layout  
 - **JavaScript:** Smooth scrolling, interactive buttons  
 - **Static Site:** No backend, easy to host anywhere
+
+
 
 ---
 

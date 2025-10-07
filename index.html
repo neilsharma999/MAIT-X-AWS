@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AWS Academy × MAIT Partnership - Empowering Tomorrow's Cloud Professionals through excellence in cloud computing education">
+    <meta name="keywords" content="AWS Academy, MAIT, cloud computing, certification, education, technology">
+    <title>AWS Academy × MAIT - Empowering Tomorrow's Cloud Professionals</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav__container">
+                <div class="nav__brand">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1754676382/pplx_project_search_images/06bebdf4e8938007ab82373a45b1b358a2491f68.png" alt="AWS Logo" class="nav__logo nav__logo--aws">
+                    <span class="nav__separator">×</span>
+                    <img src="https://alumni.mait.ac.in/images/MAIT/Mait_Logo.png" alt="MAIT Logo" class="nav__logo nav__logo--mait">
+                </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link nav__link--active">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#aws" class="nav__link">About AWS</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#mait" class="nav__link">About MAIT</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <span class="nav__toggle-line"></span>
+                    <span class="nav__toggle-line"></span>
+                    <span class="nav__toggle-line"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main" id="main">
+        <section class="hero" id="home">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        Empowering Tomorrow's <span class="hero__title--highlight">Cloud Professionals</span>
+                    </h1>
+                    <p class="hero__subtitle">
+                        AWS Academy × MAIT Partnership - Your Gateway to Cloud Excellence
+                    </p>
+                    <div class="hero__stats">
+                        <div class="stat">
+                            <div class="stat__content">
+                                <span class="stat__number" data-target="4000">0</span>
+                                <span class="stat__suffix">+</span>
+                            </div>
+                            <span class="stat__label">Institutions Globally</span>
+                        </div>
+                        <div class="stat">
+                            <div class="stat__content">
+                                <span class="stat__number" data-target="201">0</span>
+                                <span class="stat__suffix">-250</span>
+                            </div>
+                            <span class="stat__label">NIRF Ranking Band</span>
+                        </div>
+                        <div class="stat">
+                            <div class="stat__content">
+                                <span class="stat__number" data-target="1">0</span>
+                                <span class="stat__suffix">M+</span>
+                            </div>
+                            <span class="stat__label">Students Served</span>
+                        </div>
+                    </div>
+                    <div class="hero__actions">
+                        <a href="#aws" class="btn btn--primary">Explore AWS Academy</a>
+                        <a href="#mait" class="btn btn--outline">About MAIT</a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <picture>
+                        <source id="hero-src" media="(min-width:1200px)" srcset="">
+                        <img id="hero-image" src="" alt="MAIT campus aerial view" class="hero__img" width="900" height="600" loading="eager" onerror="this.onerror=null;this.src='assets/images/hero.jpg'">
+                    </picture>
+                </div>
+                <script>
+                    (function(){
+                        const img = document.getElementById('hero-image');
+                        const source = document.getElementById('hero-src');
+                        const remote = 'https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrg6wX0zjs6ODztM_buSu2QN_cVHWjamJXQmLhfeUuBZkB_rW-rwXhugLroOaWWf5xH3cuFg91NHbXA9jzx5JtcsEk0WVTcLgaSmdAbyH_HPSrZHTZ_Shsw3_EZNRKvT6H7Mqo=s680-w680-h510-rw';
+                        const cacheBuster = Date.now();
+                        const url = remote + '?cb=' + cacheBuster;
+                        try {
+                            if (source) source.srcset = url;
+                            img.src = url;
+                            console.log('Hero image set to:', url);
+                            img.addEventListener('error', function(){ console.warn('Hero image failed to load, falling back to local images/hero.jpg'); });
+                            img.addEventListener('load', function(){ console.log('Hero image loaded successfully (naturalWidth):', img.naturalWidth, 'naturalHeight:', img.naturalHeight); });
+                        } catch (e) {
+                            console.error('Error setting hero image', e);
+                        }
+                    })();
+                </script>
+            </div>
+        </section>
+
+        <section class="aws-section" id="aws">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">AWS Academy Program</h2>
+                    <p class="section__subtitle">
+                        Global program providing higher education institutions with free, ready-to-teach cloud computing curriculum
+                    </p>
+                </div>
+                <div class="aws-content">
+                    <div class="aws-benefits">
+                        <h3 class="aws-benefits__title">Program Benefits</h3>
+                        <div class="benefits-grid">
+                            <div class="benefit-card">
+                                <div class="benefit-card__visual">
+                                    <div class="benefit-card__icon">📚</div>
+                                </div>
+                                <div class="benefit-card__content">
+                                    <h4 class="benefit-card__title">Free AWS-authored curriculum</h4>
+                                    <p class="benefit-card__description">Comprehensive learning materials developed by AWS experts for cutting-edge cloud education</p>
+                                </div>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-card__visual">
+                                    <div class="benefit-card__icon">💻</div>
+                                </div>
+                                <div class="benefit-card__content">
+                                    <h4 class="benefit-card__title">Hands-on labs and practical experience</h4>
+                                    <p class="benefit-card__description">Real-world cloud computing practice with AWS services in secure sandbox environments</p>
+                                </div>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-card__visual">
+                                    <div class="benefit-card__icon">🏆</div>
+                                </div>
+                                <div class="benefit-card__content">
+                                    <h4 class="benefit-card__title">Industry-recognized certification preparation</h4>
+                                    <p class="benefit-card__description">Prepare for valuable AWS certifications that employers actively seek in candidates</p>
+                                </div>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-card__visual">
+                                    <div class="benefit-card__icon">💰</div>
+                                </div>
+                                <div class="benefit-card__content">
+                                    <h4 class="benefit-card__title">50% discount on AWS certification exams</h4>
+                                    <p class="benefit-card__description">Significant cost savings on professional certifications worth thousands of rupees</p>
+                                </div>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-card__visual">
+                                    <div class="benefit-card__icon">🚀</div>
+                                </div>
+                                <div class="benefit-card__content">
+                                    <h4 class="benefit-card__title">Access to AWS Skill Builder subscription</h4>
+                                    <p class="benefit-card__description">Premium learning platform with advanced courses and personalized learning paths</p>
+                                </div>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-card__visual">
+                                    <div class="benefit-card__icon">🌟</div>
+                                </div>
+                                <div class="benefit-card__content">
+                                    <h4 class="benefit-card__title">Emerging Talent Community access</h4>
+                                    <p class="benefit-card__description">Connect with peers and AWS professionals globally for networking opportunities</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="highlights-section">
+                        <div class="section__header">
+                            <h2 class="section__title highlights__title">🚀 Highlights</h2>
+                        </div>
+                        <div class="aws-stats aws-stats--compact">
+                            <div class="stats-grid">
+                                <div class="stat-card">
+                                    <span class="stat-card__number">4000+</span>
+                                    <span class="stat-card__label">Global Institutions</span>
+                                </div>
+                                <div class="stat-card">
+                                    <span class="stat-card__number">150+</span>
+                                    <span class="stat-card__label">Countries Worldwide</span>
+                                </div>
+                                <div class="stat-card">
+                                    <span class="stat-card__number">1M+</span>
+                                    <span class="stat-card__label">Students Trained</span>
+                                </div>
+                                <div class="stat-card">
+                                    <span class="stat-card__number">29%</span>
+                                    <span class="stat-card__label">Average Salary Increase</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-highlights">
+                            <div class="social-card">
+                                <img src="https://scontent.fdel75-1.fna.fbcdn.net/v/t39.30808-6/555817569_804475732532539_6613590444103623874_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=4WoQs5-1C68Q7kNvwFbrx1r&_nc_oc=Adk3YrbGjqvKq_ooKhCns3xHlVB794SDSuPk5m-7gjI1arOQQt52wD9tynuBu_0gnkw&_nc_zt=23&_nc_ht=scontent.fdel75-1.fna&_nc_gid=zP4RSM35hxgdWkdi_qOR3A&oh=00_AfebK1x2dXpKbiTEWuT5BHCWTkadAznfL2p1LkuqaR7ZZw&oe=68EB28FA" alt="Facebook - Team Photo" class="social-card__image">
+                                <a href="https://www.facebook.com/photo/?fbid=804473992532713&set=pcb.804475555865890" target="_blank" class="social-btn social-btn--facebook">
+                                    <span class="social-btn__icon">📘</span>
+                                    <span class="social-btn__text">View on Facebook</span>
+                                </a>
+                            </div>
+                            <div class="social-card">
+                                <img src="assets/images/screenshot.png" alt="Instagram - Campus Life" class="social-card__image">
+                                <a href="https://www.instagram.com/p/DIO9QkTIX4r/?img_index=1" target="_blank" class="social-btn social-btn--instagram">
+                                    <span class="social-btn__icon">📷</span>
+                                    <span class="social-btn__text">View on Instagram</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mait-section" id="mait">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">About MAIT</h2>
+                    <p class="section__subtitle">
+                        Excellence in higher education through teaching, research, and innovation since 1999
+                    </p>
+                </div>
+                <div class="mait-content">
+                    <div class="mait-info">
+                        <div class="mait-card">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1759412494/pplx_project_search_images/c8309b0fe70b930f1aaa7f942a8a47a0d91a6959.png" alt="MAIT Campus Building" class="mait-card__image">
+                            <div class="mait-card__content">
+                                <h3 class="mait-card__title">Maharaja Agrasen Institute of Technology</h3>
+                                <p class="mait-card__text">
+                                    Established in 1999 by Maharaja Agrasen Technical Education Society, MAIT has been a beacon of excellence in engineering education for over two decades. Our commitment to quality education and industry partnerships makes us a leader in technical education.
+                                </p>
+                                <div class="mait-highlights">
+                                    <div class="highlight highlight--success">
+                                        <span class="highlight__label">NIRF Ranking</span>
+                                        <span class="highlight__value">Engineering Band 201-250</span>
+                                    </div>
+                                    <div class="highlight highlight--info">
+                                        <span class="highlight__label">NBA Accreditation</span>
+                                        <span class="highlight__value">Fully Accredited Programs</span>
+                                    </div>
+                                    <div class="highlight highlight--primary">
+                                        <span class="highlight__label">AICTE Approval</span>
+                                        <span class="highlight__value">Government Recognized</span>
+                                    </div>
+                                    <div class="highlight highlight--primary">
+                                        <span class="highlight__label">Established</span>
+                                        <span class="highlight__value">1999 - 25+ Years Legacy</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="programs-section">
+                            <h3 class="programs__title">Engineering Programs Offered</h3>
+                            <div class="programs-grid">
+                                <div class="program-card">
+                                    <div class="program-card__icon">💻</div>
+                                    <span>Computer Science & Engineering</span>
+                                </div>
+                                <div class="program-card">
+                                    <div class="program-card__icon">📡</div>
+                                    <span>Information Technology</span>
+                                </div>
+                                <div class="program-card">
+                                    <div class="program-card__icon">🧠</div>
+                                    <span>Artificial Intelligence & Machine Learning</span>
+                                </div>
+                                <div class="program-card">
+                                    <div class="program-card__icon">📊</div>
+                                    <span>Data Science & Analytics</span>
+                                </div>
+                                <div class="program-card">
+                                    <div class="program-card__icon">⚡</div>
+                                    <span>Electronics & Communication Engineering</span>
+                                </div>
+                                <div class="program-card">
+                                    <div class="program-card__icon">⚙️</div>
+                                    <span>Mechanical Engineering</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Contact Us</h2>
+                    <p class="section__subtitle">
+                        Get in touch to learn more about AWS Academy × MAIT partnership and our cloud computing programs
+                    </p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-card__icon">📍</div>
+                            <h4 class="contact-card__title">College Address</h4>
+                            <p class="contact-card__text">PSP-4, Sector-22, Rohini<br>Delhi-110086, India</p>
+                        </div>
+                        <div class="contact-card contact-card--lab">
+                            <div class="contact-card__icon">🖥️</div>
+                            <h4 class="contact-card__title">AWS Academy Lab</h4>
+                            <p class="contact-card__text">11th Block, Room 1157<br>State-of-the-art cloud computing lab</p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card__icon">📞</div>
+                            <h4 class="contact-card__title">Phone</h4>
+                            <p class="contact-card__text">+91-8448186942</p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card__icon">✉️</div>
+                            <h4 class="contact-card__title">Email</h4>
+                            <p class="contact-card__text">mait@mait.ac.in</p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card__icon">🌐</div>
+                            <h4 class="contact-card__title">Website</h4>
+                            <p class="contact-card__text">
+                                <a href="https://www.mait.ac.in" target="_blank" style="color: inherit; text-decoration: underline;">www.mait.ac.in</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <div class="map-container">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3496.5540189754834!2d77.11696631508236!3d28.726276182403995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01b74f0c7d31%3A0x6e58a5e4d7b9c7d9!2sMaharaja%20Agrasen%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1635678901234!5m2!1sen!2sin"
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="MAIT Campus Location - PSP-4, Sector-22, Rohini, Delhi">
+                            </iframe>
+                            <div class="map-overlay">
+                                <div class="map-info">
+                                    <h4>📍 MAIT Campus Location</h4>
+                                    <p>Maharaja Agrasen Institute of Technology</p>
+                                    <p>PSP-4, Sector-22, Rohini, Delhi-110086</p>
+                                    <span class="aws-lab-info">🖥️ AWS Lab: 11th Block, Room 1157</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer__logos">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1754676382/pplx_project_search_images/06bebdf4e8938007ab82373a45b1b358a2491f68.png" alt="AWS Logo" class="footer__logo footer__logo--aws">
+                        <span class="footer__separator">×</span>
+                        <img src="https://alumni.mait.ac.in/images/MAIT/Mait_Logo.png" alt="MAIT Logo" class="footer__logo footer__logo--mait">
+                    </div>
+                    <p class="footer__text">Empowering tomorrow's cloud professionals through excellence in education and industry partnerships.</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4 class="footer__title">Quick Links</h4>
+                        <ul class="footer__list">
+                            <li><a href="#home" class="footer__link">Home</a></li>
+                            <li><a href="#aws" class="footer__link">About AWS Academy</a></li>
+                            <li><a href="#mait" class="footer__link">About MAIT</a></li>
+                            <li><a href="#contact" class="footer__link">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__title">Programs & Services</h4>
+                        <ul class="footer__list">
+                            <li><a href="#aws" class="footer__link">Cloud Computing Curriculum</a></li>
+                            <li><a href="#aws" class="footer__link">AWS Certification Prep</a></li>
+                            <li><a href="#contact" class="footer__link">Hands-on Cloud Labs</a></li>
+                            <li><a href="#aws" class="footer__link">Industry Partnerships</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2025 AWS Academy × MAIT Partnership. All rights reserved. | Empowering cloud professionals since 1999.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
